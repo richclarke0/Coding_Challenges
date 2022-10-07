@@ -43,12 +43,23 @@
 // Assume that everyone is immortal (it would be a bit grim if I told you to remove names once they reached 75).
 // n should be a positive number because last time I checked, people don't tend to age backwards. Therefore, use the absolute value of n.
 
+
+/*
+developers notes:
+I haven't coded anything in over a month and I feel so rusty.
+This wasn't too bad though, I used a for..in loop to iterate through the object and used Math.abs to get the absolute value of n.
+I copied the unit tests from the Edabit page after I passed all of them to the code below and commented them out.
+*/
+
 function afterNYears(names, n) {
     for (let pers in names) {
         names[pers] = names[pers] + Math.abs(n)
     }
     return names
 }
+
+//unit tests
+//i don't know about testing, never done it, but i copied these anyway
 
 // Test.assertSimilar(afterNYears({
 // 	"Joel" : 32,
